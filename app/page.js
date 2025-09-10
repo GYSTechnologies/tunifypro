@@ -1,103 +1,265 @@
-import Image from "next/image";
+import Home from "@/components/sections/home/Home";
+import Footer from "@/components/ui/Footer";
+import Header from "@/components/ui/Header";
+import { Metadata } from 'next';
 
-export default function Home() {
+export const metadata = {
+  title: 'TunifyPro - Best Hearing Aids & Audiologist Services in Dehradun | Signia, Widex, Phonak',
+  description: 'Leading hearing aid center in Dehradun offering premium hearing solutions from Signia, Widex, Phonak, ReSound. Expert audiologist consultation, hearing tests, and personalized hearing aid fitting services.',
+  icons:{
+    icon:'/home/hero1.jpg',
+  },
+  keywords: [
+    'hearing aids Dehradun',
+    'audiologist Dehradun', 
+    'hearing test Dehradun',
+    'Signia hearing aids',
+    'Widex hearing aids',
+    'Phonak hearing aids',
+    'ReSound hearing aids',
+    'hearing aid consultation',
+    'hearing loss treatment',
+    'digital hearing aids',
+    'invisible hearing aids',
+    'hearing aid repair',
+    'hearing aid price',
+    'best hearing aids India',
+    'TunifyPro'
+  ],
+  
+  authors: [{ name: 'TunifyPro Hearing Solutions' }],
+  creator: 'TunifyPro',
+  publisher: 'TunifyPro Hearing Solutions',
+  
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  
+  openGraph: {
+    type: 'website',
+    locale: 'en_IN',
+    url: 'https://tunifypro.com',
+    title: 'TunifyPro - Premium Hearing Aids & Audiologist Services in Dehradun',
+    description: 'Transform your hearing experience with premium hearing aids from world-renowned brands. Expert consultation, personalized fitting, and comprehensive hearing care services in Dehradun.',
+    siteName: 'TunifyPro Hearing Solutions',
+    images: [
+      {
+        url: '/og-image.jpg', 
+        width: 1200,
+        height: 630,
+        alt: 'TunifyPro - Leading Hearing Aid Center in Dehradun',
+      },
+      {
+        url: '/og-image-square.jpg', 
+        width: 600,
+        height: 600,
+        alt: 'TunifyPro Hearing Solutions',
+      }
+    ],
+  },
+  
+  twitter: {
+    card: 'summary_large_image',
+    site: '@TunifyPro', // Add your Twitter handle
+    creator: '@TunifyPro',
+    title: 'TunifyPro - Best Hearing Aids in Dehradun | Expert Audiologist Services',
+    description: 'Premium hearing aids from Signia, Widex, Phonak & ReSound. Professional audiologist consultation and hearing tests in Dehradun. Book your appointment today!',
+    images: ['/twitter-image.jpg'], // Add your Twitter card image
+  },
+  
+  verification: {
+    google: 'your-google-verification-code',
+    bing: 'your-bing-verification-code',
+  },
+  
+  category: 'Healthcare',
+  classification: 'Medical Equipment & Hearing Healthcare',
+  
+  alternates: {
+    canonical: 'https://tunifypro.com',
+    languages: {
+      'en-IN': 'https://tunifypro.com',
+      'hi-IN': 'https://tunifypro.com/hi', // If you have Hindi version
+    }
+  },
+  
+  appleWebApp: {
+    capable: true,
+    title: 'TunifyPro',
+    statusBarStyle: 'default',
+  },
+  
+  formatDetection: {
+    telephone: true,
+    email: true,
+    address: true,
+  },
+  
+  referrer: 'origin-when-cross-origin',
+  
+  other: {
+    'theme-color': '#7C3AED', // Your brand color
+    'color-scheme': 'light',
+    'mobile-web-app-capable': 'yes',
+    'apple-mobile-web-app-capable': 'yes',
+    'apple-mobile-web-app-status-bar-style': 'default',
+    'msapplication-TileColor': '#7C3AED',
+    'msapplication-config': '/browserconfig.xml',
+    
+    'geo.region': 'IN-UT',
+    'geo.placename': 'Dehradun',
+    'geo.position': '30.3165;78.0322', // Dehradun coordinates
+    'ICBM': '30.3165, 78.0322',
+    
+    'contact': 'info@tunifypro.com',
+    'reply-to': 'info@tunifypro.com',
+    
+    'rating': 'General',
+    'distribution': 'Global',
+  }
+};
+
+export default function page() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "Organization",
+                "@id": "https://tunifypro.com/#organization",
+                "name": "TunifyPro Hearing Solutions",
+                "alternateName": "TunifyPro",
+                "url": "https://tunifypro.com",
+                "logo": {
+                  "@type": "ImageObject",
+                  "url": "https://tunifypro.com/logo.png",
+                  "width": 200,
+                  "height": 60
+                },
+                "description": "Leading hearing aid center in Dehradun offering premium hearing solutions and audiologist services.",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "Your Address Here",
+                  "addressLocality": "Dehradun",
+                  "addressRegion": "Uttarakhand",
+                  "postalCode": "248001",
+                  "addressCountry": "IN"
+                },
+                "contactPoint": {
+                  "@type": "ContactPoint",
+                  "telephone": "+91-XXXXXXXXXX",
+                  "contactType": "Customer Service",
+                  "availableLanguage": ["English", "Hindi"]
+                },
+                "sameAs": [
+                  "https://facebook.com/tunifypro",
+                  "https://instagram.com/tunifypro",
+                  "https://twitter.com/tunifypro"
+                ]
+              },
+              {
+                "@type": "WebSite",
+                "@id": "https://tunifypro.com/#website",
+                "url": "https://tunifypro.com",
+                "name": "TunifyPro Hearing Solutions",
+                "publisher": {
+                  "@id": "https://tunifypro.com/#organization"
+                },
+                "potentialAction": {
+                  "@type": "SearchAction",
+                  "target": "https://tunifypro.com/search?q={search_term_string}",
+                  "query-input": "required name=search_term_string"
+                }
+              },
+              {
+                "@type": "MedicalBusiness",
+                "@id": "https://tunifypro.com/#medicalbusiness",
+                "name": "TunifyPro Hearing Solutions",
+                "image": "https://tunifypro.com/business-image.jpg",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "Your Address Here",
+                  "addressLocality": "Dehradun",
+                  "addressRegion": "Uttarakhand",
+                  "postalCode": "248001",
+                  "addressCountry": "IN"
+                },
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": 30.3165,
+                  "longitude": 78.0322
+                },
+                "telephone": "+91-XXXXXXXXXX",
+                "medicalSpecialty": "Audiology",
+                "availableService": [
+                  {
+                    "@type": "MedicalProcedure",
+                    "name": "Hearing Test"
+                  },
+                  {
+                    "@type": "MedicalProcedure", 
+                    "name": "Hearing Aid Fitting"
+                  },
+                  {
+                    "@type": "MedicalProcedure",
+                    "name": "Hearing Aid Consultation"
+                  }
+                ]
+              },
+              {
+                "@type": "Product",
+                "name": "Premium Hearing Aids",
+                "description": "High-quality hearing aids from leading brands like Signia, Widex, Phonak, and ReSound.",
+                "brand": [
+                  {
+                    "@type": "Brand",
+                    "name": "Signia"
+                  },
+                  {
+                    "@type": "Brand", 
+                    "name": "Widex"
+                  },
+                  {
+                    "@type": "Brand",
+                    "name": "Phonak"
+                  },
+                  {
+                    "@type": "Brand",
+                    "name": "ReSound"
+                  }
+                ],
+                "category": "Medical Equipment",
+                "offers": {
+                  "@type": "AggregateOffer",
+                  "availability": "https://schema.org/InStock",
+                  "priceCurrency": "INR",
+                  "seller": {
+                    "@id": "https://tunifypro.com/#organization"
+                  }
+                }
+              }
+            ]
+          })
+        }}
+      />
+      
+      <div className="">
+        <Header/>
+        <Home/>
+        <Footer/>
+      </div>
+    </>
   );
 }
