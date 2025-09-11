@@ -55,7 +55,7 @@ export default function BrandComparison() {
   const displayedFeatures = (isMobile && !showAll) ? features.slice(0, 5) : features
   
   return (
-    <section className="py-14 min-h-[70vh] bg-gray-50 flex justify-center items-start">
+    <section className="py-14 min-h-[70vh] bg-[#FBF9D1] flex justify-center items-start">
       <div className="w-full max-w-5xl mx-auto px-4">
 
         <h2 className="text-center text-3xl sm:text-4xl font-extrabold text-orange-500 mb-1">

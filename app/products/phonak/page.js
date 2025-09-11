@@ -7,6 +7,9 @@ import Phonak from '@/components/sections/products/phonak/Phonak'
 export const metadata = {
   title: 'Phonak Hearing Aids - Latest Models & Prices | TunifyPro',
   description: 'Explore Phonak\'s premium hearing aids collection at TunifyPro. Discover advanced hearing solutions with AI technology, Bluetooth connectivity, and superior sound quality. Free consultation available.',
+  icons: {
+    icon: '/tunifyprologo.png',
+  },
   keywords: [
     'Phonak hearing aids',
     'hearing aids online',
@@ -76,11 +79,6 @@ export const metadata = {
       'max-image-preview': 'large',
       'max-snippet': -1,
     },
-  },
-  icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon-16x16.png',
-    apple: '/apple-touch-icon.png',
   },
   manifest: '/site.webmanifest',
   other: {
@@ -184,19 +182,19 @@ export function generateJsonLd() {
 }
 
 export default function Page() {
-    const jsonLd = generateJsonLd()
+  const jsonLd = generateJsonLd()
 
-    return (
-        <>
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-            />
-            <div>
-                <Header />
-                <Phonak />
-                <Footer />
-            </div>
-        </>
-    )
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <div>
+        <Header />
+        <Phonak />
+        <Footer />
+      </div>
+    </>
+  )
 }

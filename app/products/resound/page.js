@@ -7,6 +7,9 @@ import ReSound from '@/components/sections/products/resound/ReSound'
 export const metadata = {
   title: 'ReSound Hearing Aids - Smart Technology & Connectivity | TunifyPro',
   description: 'Discover ReSound\'s innovative hearing aids collection at TunifyPro. Experience smart hearing technology with M&RIE, Bluetooth LE Audio, and AI-powered sound processing. Free consultation available.',
+  icons: {
+    icon: '/tunifyprologo.png',
+  },
   keywords: [
     'ReSound hearing aids',
     'smart hearing aids',
@@ -78,11 +81,7 @@ export const metadata = {
       'max-snippet': -1,
     },
   },
-  icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon-16x16.png',
-    apple: '/apple-touch-icon.png',
-  },
+
   manifest: '/site.webmanifest',
   other: {
     'mobile-web-app-capable': 'yes',
@@ -198,19 +197,19 @@ export function generateJsonLd() {
 }
 
 export default function Page() {
-    const jsonLd = generateJsonLd()
+  const jsonLd = generateJsonLd()
 
-    return (
-        <>
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-            />
-            <div>
-                <Header />
-                <ReSound />
-                <Footer />
-            </div>
-        </>
-    )
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <div>
+        <Header />
+        <ReSound />
+        <Footer />
+      </div>
+    </>
+  )
 }

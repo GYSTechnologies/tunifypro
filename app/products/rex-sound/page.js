@@ -7,6 +7,9 @@ import RexSound from '@/components/sections/products/rexsound/RexSound'
 export const metadata = {
   title: 'Rex Sound Hearing Aids - Affordable & Reliable Solutions | TunifyPro',
   description: 'Discover Rex Sound hearing aids at TunifyPro - affordable, reliable hearing solutions starting from ₹200. Perfect for budget-conscious users seeking quality hearing assistance with easy-to-use features.',
+  icons:{
+    icon:'/tunifyprologo.png',
+  },
   keywords: [
     'Rex Sound hearing aids',
     'affordable hearing aids',
@@ -78,11 +81,7 @@ export const metadata = {
       'max-snippet': -1,
     },
   },
-  icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon-16x16.png',
-    apple: '/apple-touch-icon.png',
-  },
+
   manifest: '/site.webmanifest',
   other: {
     'mobile-web-app-capable': 'yes',

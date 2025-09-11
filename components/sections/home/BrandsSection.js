@@ -329,7 +329,7 @@ export default function BrandsSection() {
     }
 
     return (
-        <section className="bg-gradient-to-b from-gray-50 to-gray-100 py-16">
+        <section className="bg-[#FBF9D1] py-16">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-4">
                     <h2 className="text-4xl font-bold text-gray-900 mb-4">

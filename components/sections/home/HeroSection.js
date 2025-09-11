@@ -3,7 +3,7 @@ import BookingForm from './BookingForm'
 export default function HeroSection() {
   return (
     <div>
-      <main className=" bg-gray-50">
+      <main className=" bg-[#FBF9D1]">
 
         {/* Main Content */}
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
