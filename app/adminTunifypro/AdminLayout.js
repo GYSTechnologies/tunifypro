@@ -31,6 +31,11 @@ const AdminLayout = ({ children }) => {
 
   const navItems = [
     {
+      name: 'Offline Enquiry',
+      icon: <MdHome />,
+      route: '/adminTunifypro/offline-enquiry',
+    },
+    {
       name: "Consult Enquiry",
       icon: <MdHotel />,
       route: '/adminTunifypro/consult-enquiry',
@@ -59,9 +64,8 @@ const AdminLayout = ({ children }) => {
 
       {/* Sidebar */}
       <div
-        className={`fixed z-30 top-0 left-0 h-full bg-gray-100 border-r border-gray-300 p-4 transform transition-transform duration-300 ease-in-out ${
-          sidebarOpen ? 'translate-x-0' : '-translate-x-full'
-        } lg:relative lg:translate-x-0 lg:w-64 lg:block`}
+        className={`fixed z-30 top-0 left-0 h-full bg-gray-100 border-r border-gray-300 p-4 transform transition-transform duration-300 ease-in-out ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'
+          } lg:relative lg:translate-x-0 lg:w-64 lg:block`}
       >
         <div className="flex items-center justify-between mb-6 lg:hidden">
           <span className="text-lg font-bold">Menu</span>
@@ -82,9 +86,8 @@ const AdminLayout = ({ children }) => {
                   <>
                     <button
                       onClick={() => toggleMenu(item.name)}
-                      className={`flex items-center gap-3 w-full p-2 rounded-md hover:bg-orange-100 transition ${
-                        isActive ? 'bg-orange-100 font-semibold text-orange-700' : ''
-                      }`}
+                      className={`flex items-center gap-3 w-full p-2 rounded-md hover:bg-orange-100 transition ${isActive ? 'bg-orange-100 font-semibold text-orange-700' : ''
+                        }`}
                     >
                       {item.icon}
                       <span className="text-sm font-medium flex-1 text-left">{item.name}</span>
@@ -97,11 +100,10 @@ const AdminLayout = ({ children }) => {
                           <li key={idx}>
                             <Link
                               href={sub.route}
-                              className={`block text-sm p-2 rounded-md hover:bg-orange-100 transition ${
-                                pathname === sub.route
+                              className={`block text-sm p-2 rounded-md hover:bg-orange-100 transition ${pathname === sub.route
                                   ? 'bg-orange-100 font-semibold text-orange-700'
                                   : ''
-                              }`}
+                                }`}
                             >
                               {sub.name}
                             </Link>
@@ -121,11 +123,10 @@ const AdminLayout = ({ children }) => {
                 ) : (
                   <Link
                     href={item.route}
-                    className={`flex items-center gap-3 p-2 rounded-md hover:bg-orange-100 transition ${
-                      pathname === item.route
+                    className={`flex items-center gap-3 p-2 rounded-md hover:bg-orange-100 transition ${pathname === item.route
                         ? 'bg-orange-100 font-semibold text-orange-700'
                         : ''
-                    }`}
+                      }`}
                   >
                     {item.icon}
                     <span className="text-sm font-medium">{item.name}</span>
