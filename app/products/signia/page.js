@@ -3,10 +3,12 @@ import Signia from '@/components/sections/products/signia/Signia'
 import Header from '@/components/ui/Header'
 import Footer from '@/components/ui/Footer'
 
-// Metadata for SEO optimization
 export const metadata = {
   title: 'Signia Hearing Aids - Be Brilliant Technology | TunifyPro',
   description: 'Discover Signia\'s innovative hearing aids at TunifyPro. Experience life-enhancing technology with Integrated Xperience, Pure Charge&Go, and advanced AI features. Be Brilliant with premium hearing solutions.',
+  icons:{
+    icon:'/tunifyproLogo.png',
+  },
   keywords: [
     'Signia hearing aids',
     'Be Brilliant hearing aids',
@@ -77,11 +79,6 @@ export const metadata = {
       'max-image-preview': 'large',
       'max-snippet': -1,
     },
-  },
-  icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon-16x16.png',
-    apple: '/apple-touch-icon.png',
   },
   manifest: '/site.webmanifest',
   other: {

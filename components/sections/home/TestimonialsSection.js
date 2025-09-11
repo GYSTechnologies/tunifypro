@@ -64,7 +64,7 @@ export default function TestimonialsSection() {
   const next = () => setIndex((index + 1) % testimonials.length)
 
   return (
-    <section className="bg-gray-50 py-16">
+    <section className="bg-[#FBF9D1] py-16">
       <div className="max-w-3xl mx-auto px-4">
         <div className="text-center mb-7">
           <h2 className="text-3xl sm:text-4xl font-bold mb-2">

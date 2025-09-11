@@ -7,6 +7,10 @@ import Widex from '@/components/sections/products/widex/Widex'
 export const metadata = {
   title: 'Widex Hearing Aids - Pure Natural Sound Technology | TunifyPro',
   description: 'Discover Widex hearing aids at TunifyPro featuring PureSound technology, SoundSense Learn AI, and natural hearing experiences. Explore Moment, SmartRIC, and Allure collections with innovative Danish design.',
+  icons:{
+    icon:'/tunifyprologo.png',
+  },
+
   keywords: [
     'Widex hearing aids',
     'PureSound technology',
@@ -79,11 +83,6 @@ export const metadata = {
       'max-image-preview': 'large',
       'max-snippet': -1,
     },
-  },
-  icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon-16x16.png',
-    apple: '/apple-touch-icon.png',
   },
   manifest: '/site.webmanifest',
   other: {

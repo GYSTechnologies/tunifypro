@@ -5,8 +5,8 @@ export const metadata = {
   title: 'Admin - Tunifypro',
   description:'',
   icons:{
-    icon:'/home/hero1.jpg'
-  }
+    icon:'/tunifyprologo.png',
+  },
 }
 export default function page() {
   return (

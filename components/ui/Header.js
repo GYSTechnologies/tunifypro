@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react'
 import { useRouter, usePathname } from 'next/navigation'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Header() {
     const [isScrolled, setIsScrolled] = useState(false)
@@ -45,8 +46,8 @@ export default function Header() {
         <>
             <header
                 className={`sticky top-0 z-50 transition-all duration-300 ${isScrolled
-                        ? 'bg-white/95 backdrop-blur-md  border-b border-orange-100'
-                        : 'bg-white shadow-sm'
+                    ? 'bg-white/95 backdrop-blur-md  border-b border-orange-100'
+                    : 'bg-white shadow-sm'
                     }`}
             >
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -54,10 +55,12 @@ export default function Header() {
 
                         {/* Logo */}
                         <Link
-                            href="/"    
-                            className="text-2xl font-bold p-2 text-orange-500"
+                            href="/"
+                            className="text-2xl font-bold "
                         >
-                            <span className="text-orange-500">Tunifypro</span>
+                            <div className="text-center  ">
+                                <Image src="/tunifypro.png" className=' p-1  ' alt="Tunifypro" width={150} height={50} />
+                            </div>
                         </Link>
 
                         {/* Desktop Navigation */}

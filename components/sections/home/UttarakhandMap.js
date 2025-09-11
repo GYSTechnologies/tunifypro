@@ -33,7 +33,7 @@ const UttarakhandMap = () => {
   const availableBrands = ['Signia', 'Widex', 'Phonak', 'ReSound', 'REX Sound']
 
   return (
-    <section className="bg-gradient-to-b from-gray-50 to-white py-16 px-4 sm:px-6 lg:px-8">
+    <section className=" bg-[#FBF9D1]  py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         
         {/* Header */}
@@ -157,7 +157,7 @@ const UttarakhandMap = () => {
         </div>
 
         {/* Service Highlights */}
-        <div className="bg-gradient-to-r from-[#f97316] to-orange-600 rounded-2xl p-8 text-white mb-12">
+        <div className="bg-gradient-to-r from-[#f97316] to-orange-400 rounded-2xl p-8 text-white mb-12">
           <div className="text-center">
             <h3 className="text-2xl font-bold mb-4">What We Offer Across All Districts</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
