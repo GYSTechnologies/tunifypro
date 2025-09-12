@@ -22,7 +22,7 @@ const Home = () => {
         <BrandComparison/>
         <FAQSection/>
         <CallToActionSection/>
-        {/* <CtaSection/> */}
+      
     </div>
   )
 }
