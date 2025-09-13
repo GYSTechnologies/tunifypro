@@ -31,7 +31,7 @@ export const metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://yourdomain.com'),
+  metadataBase: new URL('https://tunifypro.com'),
   alternates: {
     canonical: '/products/phonak',
     languages: {
@@ -41,17 +41,17 @@ export const metadata = {
   openGraph: {
     title: 'Phonak Hearing Aids - Latest Models & Prices | TunifyPro',
     description: 'Explore Phonak\'s premium hearing aids collection at TunifyPro. Advanced hearing solutions with AI technology and superior sound quality.',
-    url: 'https://yourdomain.com/products/phonak',
+    url: 'https://tunifypro.com/products/phonak',
     siteName: 'TunifyPro',
     images: [
       {
-        url: 'https://yourdomain.com/images/phonak-hearing-aids-og.jpg',
+        url: 'https://tunifypro.com/images/phonak-hearing-aids-og.jpg',
         width: 1200,
         height: 630,
         alt: 'Phonak Hearing Aids Collection - TunifyPro',
       },
       {
-        url: 'https://yourdomain.com/images/phonak-hearing-aids-square.jpg',
+        url: 'https://tunifypro.com/images/phonak-hearing-aids-square.jpg',
         width: 1200,
         height: 1200,
         alt: 'Phonak Hearing Aids - Premium Models',
@@ -65,7 +65,7 @@ export const metadata = {
     title: 'Phonak Hearing Aids - Latest Models & Prices | TunifyPro',
     description: 'Explore Phonak\'s premium hearing aids collection at TunifyPro. Advanced hearing solutions with AI technology.',
     creator: '@TunifyPro',
-    images: ['https://yourdomain.com/images/phonak-hearing-aids-twitter.jpg'],
+    images: ['https://tunifypro.com/images/phonak-hearing-aids-twitter.jpg'],
   },
   robots: {
     index: true,
@@ -98,7 +98,7 @@ export function generateJsonLd() {
     '@type': 'WebPage',
     name: 'Phonak Hearing Aids - Latest Models & Prices',
     description: 'Explore Phonak\'s premium hearing aids collection at TunifyPro. Advanced hearing solutions with AI technology and superior sound quality.',
-    url: 'https://yourdomain.com/products/phonak',
+    url: 'https://tunifypro.com/products/phonak',
     mainEntity: {
       '@type': 'ItemList',
       name: 'Phonak Hearing Aids Collection',
@@ -107,7 +107,7 @@ export function generateJsonLd() {
       itemListElement: [
         {
           '@type': 'Product',
-          '@id': 'https://yourdomain.com/products/phonak/audeo-sphere-infinio',
+          '@id': 'https://tunifypro.com/products/phonak/audeo-sphere-infinio',
           name: 'Phonak Audéo Sphere Infinio',
           category: 'Hearing Aids',
           brand: {
@@ -127,7 +127,7 @@ export function generateJsonLd() {
         },
         {
           '@type': 'Product',
-          '@id': 'https://yourdomain.com/products/phonak/audeo-lumity',
+          '@id': 'https://tunifypro.com/products/phonak/audeo-lumity',
           name: 'Phonak Audéo Lumity',
           category: 'Hearing Aids',
           brand: {
@@ -145,28 +145,28 @@ export function generateJsonLd() {
           '@type': 'ListItem',
           position: 1,
           name: 'Home',
-          item: 'https://yourdomain.com'
+          item: 'https://tunifypro.com'
         },
         {
           '@type': 'ListItem',
           position: 2,
           name: 'Products',
-          item: 'https://yourdomain.com/products'
+          item: 'https://tunifypro.com/products'
         },
         {
           '@type': 'ListItem',
           position: 3,
           name: 'Phonak',
-          item: 'https://yourdomain.com/products/phonak'
+          item: 'https://tunifypro.com/products/phonak'
         }
       ]
     },
     provider: {
       '@type': 'Organization',
-      '@id': 'https://yourdomain.com/about',
+      '@id': 'https://tunifypro.com/about',
       name: 'TunifyPro',
-      url: 'https://yourdomain.com',
-      logo: 'https://yourdomain.com/logo.png',
+      url: 'https://tunifypro.com',
+      logo: 'https://tunifypro.com/logo.png',
       contactPoint: {
         '@type': 'ContactPoint',
         telephone: '+91-XXXXXXXXXX',

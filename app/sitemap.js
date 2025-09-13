@@ -10,12 +10,6 @@ export default function sitemap() {
       priority: 1.0,
     },
     {
-      url: `${baseUrl}/products`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.9,
-    },
-    {
       url: `${baseUrl}/products/phonak`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
@@ -44,30 +38,6 @@ export default function sitemap() {
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/services`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/contact`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.6,
-    },
-    {
-      url: `${baseUrl}/offline-enquiry`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.5,
-    },
-    {
-      url: `${baseUrl}/about`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.5,
-    },
+    }
   ];
 }

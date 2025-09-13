@@ -32,7 +32,7 @@ export const metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://yourdomain.com'),
+  metadataBase: new URL('https://tunifypro.com'),
   alternates: {
     canonical: '/products/rex-sound',
     languages: {
@@ -42,17 +42,17 @@ export const metadata = {
   openGraph: {
     title: 'Rex Sound Hearing Aids - Affordable & Reliable Solutions | TunifyPro',
     description: 'Discover Rex Sound hearing aids at TunifyPro - affordable, reliable hearing solutions starting from ₹200. Perfect for budget-conscious users seeking quality hearing assistance.',
-    url: 'https://yourdomain.com/products/rex-sound',
+    url: 'https://tunifypro.com/products/rex-sound',
     siteName: 'TunifyPro',
     images: [
       {
-        url: 'https://yourdomain.com/images/rex-sound-hearing-aids-og.jpg',
+        url: 'https://tunifypro.com/images/rex-sound-hearing-aids-og.jpg',
         width: 1200,
         height: 630,
         alt: 'Rex Sound Hearing Aids - Affordable Solutions at TunifyPro',
       },
       {
-        url: 'https://yourdomain.com/images/rex-sound-hearing-aids-square.jpg',
+        url: 'https://tunifypro.com/images/rex-sound-hearing-aids-square.jpg',
         width: 1200,
         height: 1200,
         alt: 'Rex Sound Pocket & BTE Hearing Aids',
@@ -66,7 +66,7 @@ export const metadata = {
     title: 'Rex Sound Hearing Aids - Affordable & Reliable Solutions | TunifyPro',
     description: 'Discover Rex Sound hearing aids at TunifyPro - affordable, reliable hearing solutions starting from ₹200.',
     creator: '@TunifyPro',
-    images: ['https://yourdomain.com/images/rex-sound-hearing-aids-twitter.jpg'],
+    images: ['https://tunifypro.com/images/rex-sound-hearing-aids-twitter.jpg'],
   },
   robots: {
     index: true,
@@ -100,7 +100,7 @@ export function generateJsonLd() {
     '@type': 'WebPage',
     name: 'Rex Sound Hearing Aids - Affordable & Reliable Solutions',
     description: 'Discover Rex Sound hearing aids at TunifyPro - affordable, reliable hearing solutions starting from ₹200. Perfect for budget-conscious users seeking quality hearing assistance.',
-    url: 'https://yourdomain.com/products/rex-sound',
+    url: 'https://tunifypro.com/products/rex-sound',
     mainEntity: {
       '@type': 'ItemList',
       name: 'Rex Sound Hearing Aids Collection',
@@ -109,7 +109,7 @@ export function generateJsonLd() {
       itemListElement: [
         {
           '@type': 'Product',
-          '@id': 'https://yourdomain.com/products/rex-sound/premium-8-channel',
+          '@id': 'https://tunifypro.com/products/rex-sound/premium-8-channel',
           name: 'Rex Sound Premium 8 Channel',
           category: 'Hearing Aids',
           brand: {
@@ -131,7 +131,7 @@ export function generateJsonLd() {
         },
         {
           '@type': 'Product',
-          '@id': 'https://yourdomain.com/products/rex-sound/z-176-pocket',
+          '@id': 'https://tunifypro.com/products/rex-sound/z-176-pocket',
           name: 'Rex Sound Z-176 Pocket Model',
           category: 'Hearing Aids',
           brand: {
@@ -160,28 +160,28 @@ export function generateJsonLd() {
           '@type': 'ListItem',
           position: 1,
           name: 'Home',
-          item: 'https://yourdomain.com'
+          item: 'https://tunifypro.com'
         },
         {
           '@type': 'ListItem',
           position: 2,
           name: 'Products',
-          item: 'https://yourdomain.com/products'
+          item: 'https://tunifypro.com/products'
         },
         {
           '@type': 'ListItem',
           position: 3,
           name: 'Rex Sound',
-          item: 'https://yourdomain.com/products/rex-sound'
+          item: 'https://tunifypro.com/products/rex-sound'
         }
       ]
     },
     provider: {
       '@type': 'Organization',
-      '@id': 'https://yourdomain.com/about',
+      '@id': 'https://tunifypro.com/about',
       name: 'TunifyPro',
-      url: 'https://yourdomain.com',
-      logo: 'https://yourdomain.com/logo.png',
+      url: 'https://tunifypro.com',
+      logo: 'https://tunifypro.com/logo.png',
       contactPoint: {
         '@type': 'ContactPoint',
         telephone: '+91-XXXXXXXXXX',

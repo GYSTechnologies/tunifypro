@@ -100,7 +100,7 @@ export function generateJsonLd() {
     '@type': 'WebPage',
     name: 'ReSound Hearing Aids - Smart Technology & Connectivity',
     description: 'Discover ReSound\'s innovative hearing aids collection at TunifyPro. Experience smart hearing technology with M&RIE, Bluetooth LE Audio, and AI-powered sound processing.',
-    url: 'https://yourdomain.com/products/resound',
+    url: 'https://tunifypro.com/products/resound',
     mainEntity: {
       '@type': 'ItemList',
       name: 'ReSound Hearing Aids Collection',
@@ -109,7 +109,7 @@ export function generateJsonLd() {
       itemListElement: [
         {
           '@type': 'Product',
-          '@id': 'https://yourdomain.com/products/resound/vivia',
+          '@id': 'https://tunifypro.com/products/resound/vivia',
           name: 'ReSound Vivia',
           category: 'Hearing Aids',
           brand: {
@@ -129,7 +129,7 @@ export function generateJsonLd() {
         },
         {
           '@type': 'Product',
-          '@id': 'https://yourdomain.com/products/resound/nexia',
+          '@id': 'https://tunifypro.com/products/resound/nexia',
           name: 'ReSound Nexia',
           category: 'Hearing Aids',
           brand: {
@@ -140,7 +140,7 @@ export function generateJsonLd() {
         },
         {
           '@type': 'Product',
-          '@id': 'https://yourdomain.com/products/resound/one',
+          '@id': 'https://tunifypro.com/products/resound/one',
           name: 'ReSound ONE',
           category: 'Hearing Aids',
           brand: {
@@ -158,28 +158,28 @@ export function generateJsonLd() {
           '@type': 'ListItem',
           position: 1,
           name: 'Home',
-          item: 'https://yourdomain.com'
+          item: 'https://tunifypro.com'
         },
         {
           '@type': 'ListItem',
           position: 2,
           name: 'Products',
-          item: 'https://yourdomain.com/products'
+          item: 'https://tunifypro.com/products'
         },
         {
           '@type': 'ListItem',
           position: 3,
           name: 'ReSound',
-          item: 'https://yourdomain.com/products/resound'
+          item: 'https://tunifypro.com/products/resound'
         }
       ]
     },
     provider: {
       '@type': 'Organization',
-      '@id': 'https://yourdomain.com/about',
+      '@id': 'https://tunifypro.com/about',
       name: 'TunifyPro',
-      url: 'https://yourdomain.com',
-      logo: 'https://yourdomain.com/logo.png',
+      url: 'https://tunifypro.com',
+      logo: 'https://tunifypro.com/logo.png',
       contactPoint: {
         '@type': 'ContactPoint',
         telephone: '+91-XXXXXXXXXX',

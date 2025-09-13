@@ -102,56 +102,11 @@ export function generateJsonLd() {
     '@type': 'WebPage',
     name: 'Widex Hearing Aids - Pure Natural Sound Technology',
     description: 'Discover Widex hearing aids at TunifyPro featuring PureSound technology, SoundSense Learn AI, and natural hearing experiences.',
-    url: 'https://yourdomain.com/products/widex',
+    url: 'https://tunifypro.com/products/widex',
     mainEntity: {
       '@type': 'ItemList',
       name: 'Widex Hearing Aids Collection',
       description: 'Premium Danish hearing aids featuring PureSound technology, zero-delay processing, and natural sound experiences',
-      numberOfItems: 8,
-      itemListElement: [
-        {
-          '@type': 'Product',
-          '@id': 'https://yourdomain.com/products/widex/allure-ric-rd',
-          name: 'Widex Allure RIC RD',
-          category: 'Hearing Aids',
-          brand: {
-            '@type': 'Brand',
-            name: 'Widex'
-          },
-          description: 'Newest flagship hearing aid with ultra-low delay processing and AI-powered personalization',
-          offers: {
-            '@type': 'Offer',
-            availability: 'https://schema.org/InStock',
-            priceCurrency: 'INR',
-            seller: {
-              '@type': 'Organization',
-              name: 'TunifyPro'
-            }
-          }
-        },
-        {
-          '@type': 'Product',
-          '@id': 'https://yourdomain.com/products/widex/smartric',
-          name: 'Widex SmartRIC',
-          category: 'Hearing Aids',
-          brand: {
-            '@type': 'Brand',
-            name: 'Widex'
-          },
-          description: 'Revolutionary L-shaped design with 37 hours battery life and enhanced sound pickup'
-        },
-        {
-          '@type': 'Product',
-          '@id': 'https://yourdomain.com/products/widex/moment-sheer',
-          name: 'Widex Moment Sheer RIC',
-          category: 'Hearing Aids',
-          brand: {
-            '@type': 'Brand',
-            name: 'Widex'
-          },
-          description: 'Sophisticated RIC device with PureSound technology for natural, distortion-free sound'
-        }
-      ]
     },
     breadcrumb: {
       '@type': 'BreadcrumbList',
@@ -160,28 +115,22 @@ export function generateJsonLd() {
           '@type': 'ListItem',
           position: 1,
           name: 'Home',
-          item: 'https://yourdomain.com'
-        },
-        {
-          '@type': 'ListItem',
-          position: 2,
-          name: 'Products',
-          item: 'https://yourdomain.com/products'
+          item: 'https://tunifypro.com'
         },
         {
           '@type': 'ListItem',
           position: 3,
           name: 'Widex',
-          item: 'https://yourdomain.com/products/widex'
+          item: 'https://tunifypro.com/products/widex'
         }
       ]
     },
     provider: {
       '@type': 'Organization',
-      '@id': 'https://yourdomain.com/about',
+      '@id': 'https://tunifypro.com/about',
       name: 'TunifyPro',
-      url: 'https://yourdomain.com',
-      logo: 'https://yourdomain.com/logo.png',
+      url: 'https://tunifypro.com',
+      logo: 'https://tunifypro.com/logo.png',
       contactPoint: {
         '@type': 'ContactPoint',
         telephone: '+91-XXXXXXXXXX',

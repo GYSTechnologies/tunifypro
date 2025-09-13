@@ -66,15 +66,6 @@ export const metadata = {
     ],
   },
   
-  twitter: {
-    card: 'summary_large_image',
-    site: '@TunifyPro', // Add your Twitter handle
-    creator: '@TunifyPro',
-    title: 'TunifyPro - Best Hearing Aids in Dehradun | Expert Audiologist Services',
-    description: 'Premium hearing aids from Signia, Widex, Phonak & ReSound. Professional audiologist consultation and hearing tests in Dehradun. Book your appointment today!',
-    images: ['/twitter-image.jpg'], // Add your Twitter card image
-  },
-  
   verification: {
     google: 'your-google-verification-code',
     bing: 'your-bing-verification-code',
@@ -87,7 +78,6 @@ export const metadata = {
     canonical: 'https://tunifypro.com',
     languages: {
       'en-IN': 'https://tunifypro.com',
-      'hi-IN': 'https://tunifypro.com/hi', // If you have Hindi version
     }
   },
   

@@ -1,0 +1,108 @@
+{
+    "name": "TunifyPro",
+    "short_name": "TunifyPro",
+    "description": "TunifyPro: Premium hearing aid brands, online and offline consultation, expert audiology and product comparison in India.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#FFFFFF",
+    "theme_color": "#f97316",
+    "lang": "en",
+    "scope": "/",
+    "orientation": "any",
+    "icons": [
+        {
+            "src": "/tunifyprologo.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/tunifyprologo.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "/tunifyprologo.png",
+            "sizes": "48x48 32x32 16x16",
+            "type": "image/x-icon"
+        },
+        {
+            "src": "/tunifyprologo.png",
+            "sizes": "180x180",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ],
+    "shortcuts": [
+        {
+            "name": "Signia Hearing Aids",
+            "short_name": "Brands",
+            "description": "See all hearing aid brands",
+            "url": "/products/signia",
+            "icons": [
+                {
+                    "src": "/tunifyprologo.png",
+                    "sizes": "192x192"
+                }
+            ]
+        },
+        {
+            "name": "widex Hearing Aids",
+            "short_name": "widex",
+            "description": "See all widex hearing aid brands",
+            "url": "/products/widex",
+            "icons": [
+                {
+                    "src": "/tunifyprologo.png",
+                    "sizes": "192x192"
+                }
+            ]
+        },
+        {
+            "name": "phonak Hearing Aids",
+            "short_name": "phonak",
+            "description": "See all widex hearing aid brands",
+            "url": "/products/phonak",
+            "icons": [
+                {
+                    "src": "/tunifyprologo.png",
+                    "sizes": "192x192"
+                }
+            ]
+        },
+        {
+            "name": "resound Hearing Aids",
+            "short_name": "resound",
+            "description": "See all resound hearing aid brands",
+            "url": "/products/resound",
+            "icons": [
+                {
+                    "src": "/tunifyprologo.png",
+                    "sizes": "192x192"
+                }
+            ]
+        },
+        {
+            "name": "rexsound Hearing Aids",
+            "short_name": "rexsound",
+            "description": "See all rexsound hearing aid brands",
+            "url": "/products/rexsound",
+            "icons": [
+                {
+                    "src": "/tunifyprologo.png",
+                    "sizes": "192x192"
+                }
+            ]
+        }
+    ],
+ 
+    "categories": [
+        "health",
+        "medical",
+        "services",
+        "technology",
+        "shopping",
+        "Hearing Aids"
+    ],
+    "dir": "ltr",
+    "prefer_related_applications": false
+}

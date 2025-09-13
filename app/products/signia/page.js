@@ -31,7 +31,7 @@ export const metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://yourdomain.com'),
+  metadataBase: new URL('https://tunifypro.com'),
   alternates: {
     canonical: '/products/signia',
     languages: {
@@ -41,17 +41,17 @@ export const metadata = {
   openGraph: {
     title: 'Signia Hearing Aids - Be Brilliant Technology | TunifyPro',
     description: 'Discover Signia\'s innovative hearing aids at TunifyPro. Experience life-enhancing technology with Integrated Xperience, Pure Charge&Go, and advanced AI features.',
-    url: 'https://yourdomain.com/products/signia',
+    url: 'https://tunifypro.com/products/signia',
     siteName: 'TunifyPro',
     images: [
       {
-        url: 'https://yourdomain.com/images/signia-hearing-aids-og.jpg',
+        url: 'https://tunifypro.com/images/signia-hearing-aids-og.jpg',
         width: 1200,
         height: 630,
         alt: 'Signia Hearing Aids Collection - Be Brilliant Technology at TunifyPro',
       },
       {
-        url: 'https://yourdomain.com/images/signia-hearing-aids-square.jpg',
+        url: 'https://tunifypro.com/images/signia-hearing-aids-square.jpg',
         width: 1200,
         height: 1200,
         alt: 'Signia Pure Charge&Go and Integrated Xperience Models',
@@ -65,7 +65,7 @@ export const metadata = {
     title: 'Signia Hearing Aids - Be Brilliant Technology | TunifyPro',
     description: 'Discover Signia\'s innovative hearing aids with Integrated Xperience and AI technology at TunifyPro.',
     creator: '@TunifyPro',
-    images: ['https://yourdomain.com/images/signia-hearing-aids-twitter.jpg'],
+    images: ['https://tunifypro.com/images/signia-hearing-aids-twitter.jpg'],
   },
   robots: {
     index: true,
@@ -98,7 +98,7 @@ export function generateJsonLd() {
     '@type': 'WebPage',
     name: 'Signia Hearing Aids - Be Brilliant Technology',
     description: 'Discover Signia\'s innovative hearing aids at TunifyPro. Experience life-enhancing technology with Integrated Xperience, Pure Charge&Go, and advanced AI features.',
-    url: 'https://yourdomain.com/products/signia',
+    url: 'https://tunifypro.com/products/signia',
     mainEntity: {
       '@type': 'ItemList',
       name: 'Signia Hearing Aids Collection',
@@ -107,7 +107,7 @@ export function generateJsonLd() {
       itemListElement: [
         {
           '@type': 'Product',
-          '@id': 'https://yourdomain.com/products/signia/pure-charge-go-ix',
+          '@id': 'https://tunifypro.com/products/signia/pure-charge-go-ix',
           name: 'Signia Pure Charge&Go IX',
           category: 'Hearing Aids',
           brand: {
@@ -127,7 +127,7 @@ export function generateJsonLd() {
         },
         {
           '@type': 'Product',
-          '@id': 'https://yourdomain.com/products/signia/styletto-ax',
+          '@id': 'https://tunifypro.com/products/signia/styletto-ax',
           name: 'Signia Styletto AX',
           category: 'Hearing Aids',
           brand: {
@@ -138,7 +138,7 @@ export function generateJsonLd() {
         },
         {
           '@type': 'Product',
-          '@id': 'https://yourdomain.com/products/signia/active-pro',
+          '@id': 'https://tunifypro.com/products/signia/active-pro',
           name: 'Signia Active Pro',
           category: 'Hearing Aids',
           brand: {
@@ -156,28 +156,28 @@ export function generateJsonLd() {
           '@type': 'ListItem',
           position: 1,
           name: 'Home',
-          item: 'https://yourdomain.com'
+          item: 'https://tunifypro.com'
         },
         {
           '@type': 'ListItem',
           position: 2,
           name: 'Products',
-          item: 'https://yourdomain.com/products'
+          item: 'https://tunifypro.com/products'
         },
         {
           '@type': 'ListItem',
           position: 3,
           name: 'Signia',
-          item: 'https://yourdomain.com/products/signia'
+          item: 'https://tunifypro.com/products/signia'
         }
       ]
     },
     provider: {
       '@type': 'Organization',
-      '@id': 'https://yourdomain.com/about',
+      '@id': 'https://tunifypro.com/about',
       name: 'TunifyPro',
-      url: 'https://yourdomain.com',
-      logo: 'https://yourdomain.com/logo.png',
+      url: 'https://tunifypro.com',
+      logo: 'https://tunifypro.com/logo.png',
       contactPoint: {
         '@type': 'ContactPoint',
         telephone: '+91-XXXXXXXXXX',

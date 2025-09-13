@@ -48,17 +48,17 @@ const UttarakhandMap = () => {
         </div>
 
         {/* Main Content Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center mb-12">
           
           {/* Map Image */}
-          <div className="order-2 lg:order-1">
+          <div className="order-2 lg:order-1 lg:col-span-1">
             <div className="bg-white rounded-2xl shadow-lg p-4 border border-gray-200">
               <Image 
                 src="/home/map.png"
-                width={600}
-                height={300}
+                width={400}
+                height={250}
                 alt="TunifyPro service coverage map across Uttarakhand districts"
-                className="w-full h-[300px] object-cover rounded-xl shadow-md"
+                className=" h-[250px] object-fit rounded-xl shadow-md"
               />
               
               {/* Map Caption */}
@@ -71,7 +71,7 @@ const UttarakhandMap = () => {
           </div>
 
           {/* Service Information Panel */}
-          <div className="order-1 lg:order-2 space-y-6">
+          <div className="order-1 lg:order-2 lg:col-span-2 space-y-6">
             <div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Comprehensive Hearing Care</h3>
               <p className="text-gray-700 leading-relaxed mb-4">
@@ -85,11 +85,11 @@ const UttarakhandMap = () => {
             </div>
 
             {/* Service Statistics */}
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {serviceStats.map((stat, index) => (
-                <div key={index} className="bg-orange-50 rounded-lg p-4 border border-orange-100">
-                  <div className="text-2xl font-bold text-[#f97316]">{stat.value}</div>
-                  <div className="text-sm text-gray-600 mt-1">{stat.label}</div>
+                <div key={index} className="bg-orange-300/10 rounded-lg p-4 border-2 border-orange-400/30">
+                  <div className="text-2xl font-bold text-center text-[#f97316]">{stat.value}</div>
+                  <div className="text-sm text-center font-semibold text-gray-600 mt-1">{stat.label}</div>
                 </div>
               ))}
             </div>

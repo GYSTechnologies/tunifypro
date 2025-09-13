@@ -13,13 +13,13 @@ export default function AboutSection() {
   }, [])
 
   return (
-    <section ref={aboutRef} className="py-16 sm:py-18 lg:py-16 bg-[#FBF9D1]">
+    <section ref={aboutRef} className="py-10 sm:py-14 lg:py-14 bg-[#FBF9D1]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4    ">
         <div className="text-center max-w-7xl mx-auto">
 
           {/* Section Heading */}
           <div
-            className={`transition-all duration-700 ease-out mb-6 sm:mb-10 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+            className={`transition-all duration-700 ease-out mb-3 sm:mb-10 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
               }`}
             style={{ transitionDelay: '100ms' }}
           >
@@ -40,7 +40,7 @@ export default function AboutSection() {
             <div className="flex justify-center items-end gap-2 lg:gap-6">
 
               {/* Image 1 (far left, short) */}
-              <div className="relative w-24 sm:w-28 md:w-32 h-32 sm:h-40 md:h-56  mb-18  overflow-hidden rounded-2xl shadow-lg">
+              <div className="relative w-24 sm:w-28 md:w-32 h-36 sm:h-40 md:h-56  mb-18  overflow-hidden rounded-2xl shadow-lg">
                 <Image
                   src="/home/about1.png"
                   alt="Consultation"
@@ -51,7 +51,7 @@ export default function AboutSection() {
               </div>
 
               {/* Image 2 (left center, taller) */}
-              <div className="relative w-24 sm:w-28 md:w-32 h-42 sm:h-48 md:h-56  mb-8 overflow-hidden rounded-2xl shadow-lg">
+              <div className="relative w-24 sm:w-28 md:w-32 h-40 sm:h-48 md:h-56  mb-8 overflow-hidden rounded-2xl shadow-lg">
                 <Image
                   src="/home/about2.png"
                   alt="Hearing aid technology"
@@ -62,7 +62,7 @@ export default function AboutSection() {
               </div>
 
               {/* Image 3 (center, biggest) */}
-              <div className="relative w-24 sm:w-28 md:w-32 h-48 sm:h-60 md:h-56  overflow-hidden rounded-2xl shadow-lg">
+              <div className="relative w-24 sm:w-28 md:w-32 h-40  sm:h-48  md:h-56  overflow-hidden rounded-2xl shadow-lg">
                 <Image
                   src="/home/about3.png"
                   alt="Happy patient"
@@ -73,7 +73,7 @@ export default function AboutSection() {
               </div>
 
               {/* Image 4 (right center, taller) */}
-              <div className="relative w-24 sm:w-28 md:w-32 h-42 sm:h-48 md:h-56   mb-8   overflow-hidden rounded-2xl shadow-lg">
+              <div className="relative w-24 sm:w-28 md:w-32 h-40 sm:h-48 md:h-56   mb-8   overflow-hidden rounded-2xl shadow-lg">
                 <Image
                   src="/home/about4.png"
                   alt="Hearing solution"
@@ -84,7 +84,7 @@ export default function AboutSection() {
               </div>
 
               {/* Image 5 (far right, short) */}
-              <div className="relative w-24 sm:w-28 md:w-32 h-32 sm:h-40 md:h-56 mb-18 overflow-hidden rounded-2xl shadow-lg">
+              <div className="relative w-24 sm:w-28 md:w-32 h-36 sm:h-40 md:h-56 mb-18 overflow-hidden rounded-2xl shadow-lg">
                 <Image
                   src="/home/about5.png"
                   alt="Audiologist"
