@@ -11,9 +11,9 @@ export default function HeroSection() {
             {/* Left Side - Content */}
             <div className="space-y-8">
               <div>
-                <h2 className="text-5xl font-bold text-orange-500 leading-tight mb-6">
+                <h1 className="text-5xl font-bold text-orange-500 leading-tight mb-6">
                 Rediscover the Joy of Hearing with Tunifypro
-                </h2>
+                </h1>
                 
               </div>
 
