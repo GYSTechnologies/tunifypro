@@ -4,7 +4,7 @@ import Header from "@/components/ui/Header";
 import { Metadata } from 'next';
 
 export const metadata = {
-  title: 'TunifyPro - Best Hearing Aids & Audiologist Services in Dehradun | Signia, Widex, Phonak',
+  title: 'TunifyPro - Best Hearing Aids & Audiologist Services in Dehradun',
   description: 'Leading hearing aid center in Dehradun offering premium hearing solutions from Signia, Widex, Phonak, ReSound. Expert audiologist consultation, hearing tests, and personalized hearing aid fitting services.',
   icons:{
     icon:'/tunifyprologo.png',
