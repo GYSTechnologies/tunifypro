@@ -12,23 +12,24 @@ export default function HeroSection() {
             <div className="space-y-8">
               <div>
                 <h1 className="text-5xl font-bold text-orange-500 leading-tight mb-6">
-                Rediscover the Joy of Hearing with Tunifypro
+                  Rediscover Hearing Joy with Tunifypro – Your Trusted Hearing Solution
                 </h1>
-                
+
+
               </div>
 
               {/* Hearing Test Image */}
               <div className="relative">
-                <img 
-                  src="/home/hero1.jpg" 
-                  alt="Hearing test consultation" 
+                <img
+                  src="/home/hero1.jpg"
+                  alt="Hearing test consultation"
                   className="rounded-lg shadow-lg w-full max-w-md"
                 />
               </div>
               <p className="text-gray-600 text-lg leading-relaxed">
-                  Book your free hearing test and find<br />
-                  the right solution tailored for you.
-                </p>
+                Book your free hearing test and find<br />
+                the right solution tailored for you.
+              </p>
             </div>
 
             {/* Right Side - Booking Form */}
