@@ -1,4 +1,5 @@
 'use client'
+import Link from 'next/link'
 import { useState } from 'react'
 
 const faqData = [
@@ -97,8 +98,9 @@ export default function FAQSection() {
                 <button onClick={handleBookNowClick} className="bg-[#f97316] text-white px-6 py-2 rounded-lg hover:bg-orange-600 transition-colors font-semibold">
                   Book Free Consultation
                 </button>
-                <button className="border border-gray-300 text-gray-700 px-6 py-2 rounded-lg hover:bg-gray-50 transition-colors">
-                  Call: +91-XXXXXXXXXX
+            
+                <button className="border border-gray-300 select-text text-gray-700 px-6 py-2 rounded-lg hover:bg-gray-50 transition-colors" href="tel:+919258201840">
+                  Contact Us: +91-9258201840
                 </button>
               </div>
             </div>

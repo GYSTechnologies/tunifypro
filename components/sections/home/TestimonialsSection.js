@@ -3,7 +3,7 @@ import { useState } from 'react'
 
 const testimonials = [
   {
-    review: "The staff at Audicorn are very professional and helpful. Highly recommended!",
+    review: "The staff at Tunifypro are very professional and helpful. Highly recommended!",
     name: "Aditi Sharma",
     rating: 5
   },
@@ -23,7 +23,7 @@ const testimonials = [
     rating: 4.5
   },
   {
-    review: "The Amplifone, hearing aids solutions is easy to locate. The audiologist is very cooperative and treats the patients well. Home service is also available for senior citizens for a fee.",
+    review: "The Tunifypro, hearing aids solutions is easy to locate. The audiologist is very cooperative and treats the patients well. Home service is also available for senior citizens for a fee.",
     name: "S Kumar",
     rating: 5
   }

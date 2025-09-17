@@ -37,7 +37,7 @@ export default function sitemap() {
       url: `${baseUrl}/products/rex-sound`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
-      priority: 0.7,
+      priority: 0.8,
     }
   ];
 }
