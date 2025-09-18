@@ -5,8 +5,8 @@ import Widex from '@/components/sections/products/widex/Widex'
 
 // Metadata for SEO optimization
 export const metadata = {
-  title: 'Widex Hearing Aids - Pure Natural Sound Technology | TunifyPro',
-  description: 'Discover Widex hearing aids at TunifyPro featuring PureSound technology, SoundSense Learn AI, and natural hearing experiences. Explore Moment, SmartRIC, and Allure collections with innovative Danish design.',
+  title: 'Widex Hearing Aids - Pure Natural Sound Technology | Tunifypro',
+  description: 'Discover Widex hearing aids at Tunifypro featuring PureSound technology, SoundSense Learn AI, and natural hearing experiences. Explore Moment, SmartRIC, and Allure collections with innovative Danish design.',
   icons:{
     icon:'/tunifyprologo.png',
   },
@@ -21,15 +21,15 @@ export const metadata = {
     'SoundSense Learn AI',
     'ZeroDelay processing',
     'Danish hearing technology',
-    'TunifyPro',
+    'Tunifypro',
     'rechargeable hearing aids',
     'wireless hearing aids',
     'custom hearing aids',
     'invisible hearing aids'
   ],
-  authors: [{ name: 'TunifyPro' }],
-  creator: 'TunifyPro',
-  publisher: 'TunifyPro',
+  authors: [{ name: 'Tunifypro' }],
+  creator: 'Tunifypro',
+  publisher: 'Tunifypro',
   formatDetection: {
     email: false,
     address: false,
@@ -43,16 +43,16 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: 'Widex Hearing Aids - Pure Natural Sound Technology | TunifyPro',
-    description: 'Discover Widex hearing aids at TunifyPro featuring PureSound technology, SoundSense Learn AI, and natural hearing experiences. Explore innovative Danish design.',
+    title: 'Widex Hearing Aids - Pure Natural Sound Technology | Tunifypro',
+    description: 'Discover Widex hearing aids at Tunifypro featuring PureSound technology, SoundSense Learn AI, and natural hearing experiences. Explore innovative Danish design.',
     url: 'https://yourdomain.com/products/widex',
-    siteName: 'TunifyPro',
+    siteName: 'Tunifypro',
     images: [
       {
         url: 'https://yourdomain.com/images/widex-hearing-aids-og.jpg',
         width: 1200,
         height: 630,
-        alt: 'Widex Hearing Aids Collection - Pure Natural Sound at TunifyPro',
+        alt: 'Widex Hearing Aids Collection - Pure Natural Sound at Tunifypro',
       },
       {
         url: 'https://yourdomain.com/images/widex-hearing-aids-square.jpg',
@@ -66,9 +66,9 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Widex Hearing Aids - Pure Natural Sound Technology | TunifyPro',
-    description: 'Discover Widex hearing aids with PureSound technology and SoundSense Learn AI at TunifyPro.',
-    creator: '@TunifyPro',
+    title: 'Widex Hearing Aids - Pure Natural Sound Technology | Tunifypro',
+    description: 'Discover Widex hearing aids with PureSound technology and SoundSense Learn AI at Tunifypro.',
+    creator: '@Tunifypro',
     images: ['https://yourdomain.com/images/widex-hearing-aids-twitter.jpg'],
   },
   robots: {
@@ -101,7 +101,7 @@ export function generateJsonLd() {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
     name: 'Widex Hearing Aids - Pure Natural Sound Technology',
-    description: 'Discover Widex hearing aids at TunifyPro featuring PureSound technology, SoundSense Learn AI, and natural hearing experiences.',
+    description: 'Discover Widex hearing aids at Tunifypro featuring PureSound technology, SoundSense Learn AI, and natural hearing experiences.',
     url: 'https://tunifypro.com/products/widex',
     mainEntity: {
       '@type': 'ItemList',
@@ -128,7 +128,7 @@ export function generateJsonLd() {
     provider: {
       '@type': 'Organization',
       '@id': 'https://tunifypro.com/about',
-      name: 'TunifyPro',
+      name: 'Tunifypro',
       url: 'https://tunifypro.com',
       logo: 'https://tunifypro.com/logo.png',
       contactPoint: {

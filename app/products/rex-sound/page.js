@@ -5,8 +5,8 @@ import RexSound from '@/components/sections/products/rexsound/RexSound'
 
 // Metadata for SEO optimization
 export const metadata = {
-  title: 'Rex Sound Hearing Aids - Affordable & Reliable Solutions | TunifyPro',
-  description: 'Discover Rex Sound hearing aids at TunifyPro - affordable, reliable hearing solutions starting from ₹200. Perfect for budget-conscious users seeking quality hearing assistance with easy-to-use features.',
+  title: 'Rex Sound Hearing Aids - Affordable & Reliable Solutions | Tunifypro',
+  description: 'Discover Rex Sound hearing aids at Tunifypro - affordable, reliable hearing solutions starting from ₹200. Perfect for budget-conscious users seeking quality hearing assistance with easy-to-use features.',
   icons:{
     icon:'/tunifyprologo.png',
   },
@@ -18,15 +18,15 @@ export const metadata = {
     'pocket hearing aids',
     'BTE hearing aids',
     'hearing aids under 1000',
-    'TunifyPro',
+    'Tunifypro',
     'reliable hearing solutions',
     'entry level hearing aids',
     'hearing aid machine',
     'digital hearing aids'
   ],
-  authors: [{ name: 'TunifyPro' }],
-  creator: 'TunifyPro',
-  publisher: 'TunifyPro',
+  authors: [{ name: 'Tunifypro' }],
+  creator: 'Tunifypro',
+  publisher: 'Tunifypro',
   formatDetection: {
     email: false,
     address: false,
@@ -40,16 +40,16 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: 'Rex Sound Hearing Aids - Affordable & Reliable Solutions | TunifyPro',
-    description: 'Discover Rex Sound hearing aids at TunifyPro - affordable, reliable hearing solutions starting from ₹200. Perfect for budget-conscious users seeking quality hearing assistance.',
+    title: 'Rex Sound Hearing Aids - Affordable & Reliable Solutions | Tunifypro',
+    description: 'Discover Rex Sound hearing aids at Tunifypro - affordable, reliable hearing solutions starting from ₹200. Perfect for budget-conscious users seeking quality hearing assistance.',
     url: 'https://tunifypro.com/products/rex-sound',
-    siteName: 'TunifyPro',
+    siteName: 'Tunifypro',
     images: [
       {
         url: 'https://tunifypro.com/images/rex-sound-hearing-aids-og.jpg',
         width: 1200,
         height: 630,
-        alt: 'Rex Sound Hearing Aids - Affordable Solutions at TunifyPro',
+        alt: 'Rex Sound Hearing Aids - Affordable Solutions at Tunifypro',
       },
       {
         url: 'https://tunifypro.com/images/rex-sound-hearing-aids-square.jpg',
@@ -63,9 +63,9 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Rex Sound Hearing Aids - Affordable & Reliable Solutions | TunifyPro',
-    description: 'Discover Rex Sound hearing aids at TunifyPro - affordable, reliable hearing solutions starting from ₹200.',
-    creator: '@TunifyPro',
+    title: 'Rex Sound Hearing Aids - Affordable & Reliable Solutions | Tunifypro',
+    description: 'Discover Rex Sound hearing aids at Tunifypro - affordable, reliable hearing solutions starting from ₹200.',
+    creator: '@Tunifypro',
     images: ['https://tunifypro.com/images/rex-sound-hearing-aids-twitter.jpg'],
   },
   robots: {
@@ -99,7 +99,7 @@ export function generateJsonLd() {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
     name: 'Rex Sound Hearing Aids - Affordable & Reliable Solutions',
-    description: 'Discover Rex Sound hearing aids at TunifyPro - affordable, reliable hearing solutions starting from ₹200. Perfect for budget-conscious users seeking quality hearing assistance.',
+    description: 'Discover Rex Sound hearing aids at Tunifypro - affordable, reliable hearing solutions starting from ₹200. Perfect for budget-conscious users seeking quality hearing assistance.',
     url: 'https://tunifypro.com/products/rex-sound',
     mainEntity: {
       '@type': 'ItemList',
@@ -125,7 +125,7 @@ export function generateJsonLd() {
             priceRange: '₹800-₹1,200',
             seller: {
               '@type': 'Organization',
-              name: 'TunifyPro'
+              name: 'Tunifypro'
             }
           }
         },
@@ -147,7 +147,7 @@ export function generateJsonLd() {
             priceRange: '₹200-₹400',
             seller: {
               '@type': 'Organization',
-              name: 'TunifyPro'
+              name: 'Tunifypro'
             }
           }
         }
@@ -179,7 +179,7 @@ export function generateJsonLd() {
     provider: {
       '@type': 'Organization',
       '@id': 'https://tunifypro.com/about',
-      name: 'TunifyPro',
+      name: 'Tunifypro',
       url: 'https://tunifypro.com',
       logo: 'https://tunifypro.com/logo.png',
       contactPoint: {

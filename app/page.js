@@ -4,7 +4,7 @@ import Header from "@/components/ui/Header";
 import { Metadata } from 'next';
 
 export const metadata = {
-  title: 'TunifyPro - Best Hearing Aids & Audiologist Services in Dehradun',
+  title: 'Tunifypro - Best Hearing Aids & Audiologist Services in Dehradun',
   description: 'Leading hearing aid center in Dehradun offering premium hearing solutions from Signia, Widex, Phonak, ReSound.',
   icons:{
     icon:'/tunifyprologo.png',
@@ -24,12 +24,12 @@ export const metadata = {
     'hearing aid repair',
     'hearing aid price',
     'best hearing aids India',
-    'TunifyPro'
+    'Tunifypro'
   ],
   
-  authors: [{ name: 'TunifyPro Hearing Solutions' }],
-  creator: 'TunifyPro',
-  publisher: 'TunifyPro Hearing Solutions',
+  authors: [{ name: 'Tunifypro Hearing Solutions' }],
+  creator: 'Tunifypro',
+  publisher: 'Tunifypro Hearing Solutions',
   
   robots: {
     index: true,
@@ -47,21 +47,21 @@ export const metadata = {
     type: 'website',
     locale: 'en_IN',
     url: 'https://tunifypro.com',
-    title: 'TunifyPro - Premium Hearing Aids & Audiologist Services in Dehradun',
+    title: 'Tunifypro - Premium Hearing Aids & Audiologist Services in Dehradun',
     description: 'Transform your hearing experience with premium hearing aids from world-renowned brands. Expert consultation, personalized fitting, and comprehensive hearing care services in Dehradun.',
-    siteName: 'TunifyPro Hearing Solutions',
+    siteName: 'Tunifypro Hearing Solutions',
     images: [
       {
         url: '/og-image.jpg', 
         width: 1200,
         height: 630,
-        alt: 'TunifyPro - Leading Hearing Aid Center in Dehradun',
+        alt: 'Tunifypro - Leading Hearing Aid Center in Dehradun',
       },
       {
         url: '/og-image-square.jpg', 
         width: 600,
         height: 600,
-        alt: 'TunifyPro Hearing Solutions',
+        alt: 'Tunifypro Hearing Solutions',
       }
     ],
   },
@@ -83,7 +83,7 @@ export const metadata = {
   
   appleWebApp: {
     capable: true,
-    title: 'TunifyPro',
+    title: 'Tunifypro',
     statusBarStyle: 'default',
   },
   
@@ -129,8 +129,8 @@ export default function page() {
               {
                 "@type": "Organization",
                 "@id": "https://tunifypro.com/#organization",
-                "name": "TunifyPro Hearing Solutions",
-                "alternateName": "TunifyPro",
+                "name": "Tunifypro Hearing Solutions",
+                "alternateName": "Tunifypro",
                 "url": "https://tunifypro.com",
                 "logo": {
                   "@type": "ImageObject",
@@ -163,7 +163,7 @@ export default function page() {
                 "@type": "WebSite",
                 "@id": "https://tunifypro.com/#website",
                 "url": "https://tunifypro.com",
-                "name": "TunifyPro Hearing Solutions",
+                "name": "Tunifypro Hearing Solutions",
                 "publisher": {
                   "@id": "https://tunifypro.com/#organization"
                 },
@@ -176,7 +176,7 @@ export default function page() {
               {
                 "@type": "MedicalBusiness",
                 "@id": "https://tunifypro.com/#medicalbusiness",
-                "name": "TunifyPro Hearing Solutions",
+                "name": "Tunifypro Hearing Solutions",
                 "image": "https://tunifypro.com/business-image.jpg",
                 "address": {
                   "@type": "PostalAddress",

@@ -4,8 +4,8 @@ import Header from '@/components/ui/Header'
 import Footer from '@/components/ui/Footer'
 
 export const metadata = {
-  title: 'Signia Hearing Aids - Be Brilliant Technology | TunifyPro',
-  description: 'Discover Signia\'s innovative hearing aids at TunifyPro. Experience life-enhancing technology with Integrated Xperience, Pure Charge&Go, and advanced AI features. Be Brilliant with premium hearing solutions.',
+  title: 'Signia Hearing Aids - Be Brilliant Technology | Tunifypro',
+  description: 'Discover Signia\'s innovative hearing aids at Tunifypro. Experience life-enhancing technology with Integrated Xperience, Pure Charge&Go, and advanced AI features. Be Brilliant with premium hearing solutions.',
   icons:{
     icon:'/tunifyproLogo.png',
   },
@@ -18,14 +18,14 @@ export const metadata = {
     'AI hearing technology',
     'rechargeable hearing aids',
     'Bluetooth hearing aids',
-    'TunifyPro',
+    'Tunifypro',
     'premium hearing solutions',
     'natural sound hearing aids',
     'wireless hearing aids'
   ],
-  authors: [{ name: 'TunifyPro' }],
-  creator: 'TunifyPro',
-  publisher: 'TunifyPro',
+  authors: [{ name: 'Tunifypro' }],
+  creator: 'Tunifypro',
+  publisher: 'Tunifypro',
   formatDetection: {
     email: false,
     address: false,
@@ -39,16 +39,16 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: 'Signia Hearing Aids - Be Brilliant Technology | TunifyPro',
-    description: 'Discover Signia\'s innovative hearing aids at TunifyPro. Experience life-enhancing technology with Integrated Xperience, Pure Charge&Go, and advanced AI features.',
+    title: 'Signia Hearing Aids - Be Brilliant Technology | Tunifypro',
+    description: 'Discover Signia\'s innovative hearing aids at Tunifypro. Experience life-enhancing technology with Integrated Xperience, Pure Charge&Go, and advanced AI features.',
     url: 'https://tunifypro.com/products/signia',
-    siteName: 'TunifyPro',
+    siteName: 'Tunifypro',
     images: [
       {
         url: 'https://tunifypro.com/images/signia-hearing-aids-og.jpg',
         width: 1200,
         height: 630,
-        alt: 'Signia Hearing Aids Collection - Be Brilliant Technology at TunifyPro',
+        alt: 'Signia Hearing Aids Collection - Be Brilliant Technology at Tunifypro',
       },
       {
         url: 'https://tunifypro.com/images/signia-hearing-aids-square.jpg',
@@ -62,9 +62,9 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Signia Hearing Aids - Be Brilliant Technology | TunifyPro',
-    description: 'Discover Signia\'s innovative hearing aids with Integrated Xperience and AI technology at TunifyPro.',
-    creator: '@TunifyPro',
+    title: 'Signia Hearing Aids - Be Brilliant Technology | Tunifypro',
+    description: 'Discover Signia\'s innovative hearing aids with Integrated Xperience and AI technology at Tunifypro.',
+    creator: '@Tunifypro',
     images: ['https://tunifypro.com/images/signia-hearing-aids-twitter.jpg'],
   },
   robots: {
@@ -97,7 +97,7 @@ export function generateJsonLd() {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
     name: 'Signia Hearing Aids - Be Brilliant Technology',
-    description: 'Discover Signia\'s innovative hearing aids at TunifyPro. Experience life-enhancing technology with Integrated Xperience, Pure Charge&Go, and advanced AI features.',
+    description: 'Discover Signia\'s innovative hearing aids at Tunifypro. Experience life-enhancing technology with Integrated Xperience, Pure Charge&Go, and advanced AI features.',
     url: 'https://tunifypro.com/products/signia',
     mainEntity: {
       '@type': 'ItemList',
@@ -121,7 +121,7 @@ export function generateJsonLd() {
             priceCurrency: 'INR',
             seller: {
               '@type': 'Organization',
-              name: 'TunifyPro'
+              name: 'Tunifypro'
             }
           }
         },
@@ -175,7 +175,7 @@ export function generateJsonLd() {
     provider: {
       '@type': 'Organization',
       '@id': 'https://tunifypro.com/about',
-      name: 'TunifyPro',
+      name: 'Tunifypro',
       url: 'https://tunifypro.com',
       logo: 'https://tunifypro.com/logo.png',
       contactPoint: {

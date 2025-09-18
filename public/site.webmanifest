@@ -1,7 +1,7 @@
 {
-    "name": "TunifyPro",
-    "short_name": "TunifyPro",
-    "description": "TunifyPro: Premium hearing aid brands, online and offline consultation, expert audiology and product comparison in India.",
+    "name": "Tunifypro",
+    "short_name": "Tunifypro",
+    "description": "Tunifypro: Premium hearing aid brands, online and offline consultation, expert audiology and product comparison in India.",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#FFFFFF",

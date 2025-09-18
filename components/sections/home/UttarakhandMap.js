@@ -42,7 +42,7 @@ const UttarakhandMap = () => {
             Our Services Across <span className="text-[#f97316]">Uttarakhand</span>
           </h2>
           <p className="text-gray-600 text-lg max-w-3xl mx-auto">
-            TunifyPro brings world-class hearing solutions directly to your doorstep. 
+            Tunifypro brings world-class hearing solutions directly to your doorstep. 
             Explore our comprehensive services available in every district of Uttarakhand.
           </p>
         </div>
@@ -57,14 +57,14 @@ const UttarakhandMap = () => {
                 src="/home/map.png"
                 width={400}
                 height={250}
-                alt="TunifyPro service coverage map across Uttarakhand districts"
+                alt="Tunifypro service coverage map across Uttarakhand districts"
                 className=" h-[250px] object-fit rounded-xl shadow-md"
               />
               
               {/* Map Caption */}
               <div className="mt-4 text-center">
                 <p className="text-sm text-gray-600">
-                  TunifyPro Service Network - Covering All 13 Districts
+                  Tunifypro Service Network - Covering All 13 Districts
                 </p>
               </div>
             </div>
@@ -76,7 +76,7 @@ const UttarakhandMap = () => {
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Comprehensive Hearing Care</h3>
               <p className="text-gray-700 leading-relaxed mb-4">
                 From the bustling streets of Dehradun to the serene valleys of Uttarkashi, 
-                TunifyPro ensures quality hearing care reaches every corner of Uttarakhand.
+                Tunifypro ensures quality hearing care reaches every corner of Uttarakhand.
               </p>
               <p className="text-gray-700 leading-relaxed">
                 Our network includes permanent centers, mobile units, and partner clinics 

@@ -5,8 +5,8 @@ import ReSound from '@/components/sections/products/resound/ReSound'
 
 // Metadata for SEO optimization
 export const metadata = {
-  title: 'ReSound Hearing Aids - Smart Technology & Connectivity | TunifyPro',
-  description: 'Discover ReSound\'s innovative hearing aids collection at TunifyPro. Experience smart hearing technology with M&RIE, Bluetooth LE Audio, and AI-powered sound processing. Free consultation available.',
+  title: 'ReSound Hearing Aids - Smart Technology & Connectivity | Tunifypro',
+  description: 'Discover ReSound\'s innovative hearing aids collection at Tunifypro. Experience smart hearing technology with M&RIE, Bluetooth LE Audio, and AI-powered sound processing. Free consultation available.',
   icons: {
     icon: '/tunifyprologo.png',
   },
@@ -19,14 +19,14 @@ export const metadata = {
     'ReSound OMNIA',
     'ReSound Nexia',
     'ReSound ONE',
-    'TunifyPro',
+    'Tunifypro',
     'hearing solutions',
     'wireless hearing aids',
     'AI hearing technology'
   ],
-  authors: [{ name: 'TunifyPro' }],
-  creator: 'TunifyPro',
-  publisher: 'TunifyPro',
+  authors: [{ name: 'Tunifypro' }],
+  creator: 'Tunifypro',
+  publisher: 'Tunifypro',
   formatDetection: {
     email: false,
     address: false,
@@ -40,16 +40,16 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: 'ReSound Hearing Aids - Smart Technology & Connectivity | TunifyPro',
-    description: 'Discover ReSound\'s innovative hearing aids collection at TunifyPro. Experience smart hearing technology with M&RIE, Bluetooth LE Audio, and AI-powered sound processing.',
+    title: 'ReSound Hearing Aids - Smart Technology & Connectivity | Tunifypro',
+    description: 'Discover ReSound\'s innovative hearing aids collection at Tunifypro. Experience smart hearing technology with M&RIE, Bluetooth LE Audio, and AI-powered sound processing.',
     url: 'https://yourdomain.com/products/resound',
-    siteName: 'TunifyPro',
+    siteName: 'Tunifypro',
     images: [
       {
         url: 'https://yourdomain.com/images/resound-hearing-aids-og.jpg',
         width: 1200,
         height: 630,
-        alt: 'ReSound Hearing Aids Collection - TunifyPro',
+        alt: 'ReSound Hearing Aids Collection - Tunifypro',
       },
       {
         url: 'https://yourdomain.com/images/resound-hearing-aids-square.jpg',
@@ -63,9 +63,9 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'ReSound Hearing Aids - Smart Technology & Connectivity | TunifyPro',
-    description: 'Discover ReSound\'s innovative hearing aids with M&RIE technology and Bluetooth LE Audio at TunifyPro.',
-    creator: '@TunifyPro',
+    title: 'ReSound Hearing Aids - Smart Technology & Connectivity | Tunifypro',
+    description: 'Discover ReSound\'s innovative hearing aids with M&RIE technology and Bluetooth LE Audio at Tunifypro.',
+    creator: '@Tunifypro',
     images: ['https://yourdomain.com/images/resound-hearing-aids-twitter.jpg'],
   },
   robots: {
@@ -99,7 +99,7 @@ export function generateJsonLd() {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
     name: 'ReSound Hearing Aids - Smart Technology & Connectivity',
-    description: 'Discover ReSound\'s innovative hearing aids collection at TunifyPro. Experience smart hearing technology with M&RIE, Bluetooth LE Audio, and AI-powered sound processing.',
+    description: 'Discover ReSound\'s innovative hearing aids collection at Tunifypro. Experience smart hearing technology with M&RIE, Bluetooth LE Audio, and AI-powered sound processing.',
     url: 'https://tunifypro.com/products/resound',
     mainEntity: {
       '@type': 'ItemList',
@@ -123,7 +123,7 @@ export function generateJsonLd() {
             priceCurrency: 'INR',
             seller: {
               '@type': 'Organization',
-              name: 'TunifyPro'
+              name: 'Tunifypro'
             }
           }
         },
@@ -177,7 +177,7 @@ export function generateJsonLd() {
     provider: {
       '@type': 'Organization',
       '@id': 'https://tunifypro.com/about',
-      name: 'TunifyPro',
+      name: 'Tunifypro',
       url: 'https://tunifypro.com',
       logo: 'https://tunifypro.com/logo.png',
       contactPoint: {

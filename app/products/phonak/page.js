@@ -5,8 +5,8 @@ import Phonak from '@/components/sections/products/phonak/Phonak'
 
 // Metadata for SEO optimization
 export const metadata = {
-  title: 'Phonak Hearing Aids - Latest Models & Prices | TunifyPro',
-  description: 'Explore Phonak\'s premium hearing aids collection at TunifyPro. Discover advanced hearing solutions with AI technology, Bluetooth connectivity, and superior sound quality. Free consultation available.',
+  title: 'Phonak Hearing Aids - Latest Models & Prices | Tunifypro',
+  description: 'Explore Phonak\'s premium hearing aids collection at Tunifypro. Discover advanced hearing solutions with AI technology, Bluetooth connectivity, and superior sound quality. Free consultation available.',
   icons: {
     icon: '/tunifyprologo.png',
   },
@@ -16,16 +16,16 @@ export const metadata = {
     'advanced hearing technology',
     'Bluetooth hearing aids',
     'rechargeable hearing aids',
-    'TunifyPro',
+    'Tunifypro',
     'hearing solutions',
     'audiologist approved',
     'Phonak Audeo',
     'Phonak Naida',
     'Phonak Virto'
   ],
-  authors: [{ name: 'TunifyPro' }],
-  creator: 'TunifyPro',
-  publisher: 'TunifyPro',
+  authors: [{ name: 'Tunifypro' }],
+  creator: 'Tunifypro',
+  publisher: 'Tunifypro',
   formatDetection: {
     email: false,
     address: false,
@@ -39,16 +39,16 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: 'Phonak Hearing Aids - Latest Models & Prices | TunifyPro',
-    description: 'Explore Phonak\'s premium hearing aids collection at TunifyPro. Advanced hearing solutions with AI technology and superior sound quality.',
+    title: 'Phonak Hearing Aids - Latest Models & Prices | Tunifypro',
+    description: 'Explore Phonak\'s premium hearing aids collection at Tunifypro. Advanced hearing solutions with AI technology and superior sound quality.',
     url: 'https://tunifypro.com/products/phonak',
-    siteName: 'TunifyPro',
+    siteName: 'Tunifypro',
     images: [
       {
         url: 'https://tunifypro.com/images/phonak-hearing-aids-og.jpg',
         width: 1200,
         height: 630,
-        alt: 'Phonak Hearing Aids Collection - TunifyPro',
+        alt: 'Phonak Hearing Aids Collection - Tunifypro',
       },
       {
         url: 'https://tunifypro.com/images/phonak-hearing-aids-square.jpg',
@@ -62,9 +62,9 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Phonak Hearing Aids - Latest Models & Prices | TunifyPro',
-    description: 'Explore Phonak\'s premium hearing aids collection at TunifyPro. Advanced hearing solutions with AI technology.',
-    creator: '@TunifyPro',
+    title: 'Phonak Hearing Aids - Latest Models & Prices | Tunifypro',
+    description: 'Explore Phonak\'s premium hearing aids collection at Tunifypro. Advanced hearing solutions with AI technology.',
+    creator: '@Tunifypro',
     images: ['https://tunifypro.com/images/phonak-hearing-aids-twitter.jpg'],
   },
   robots: {
@@ -97,7 +97,7 @@ export function generateJsonLd() {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
     name: 'Phonak Hearing Aids - Latest Models & Prices',
-    description: 'Explore Phonak\'s premium hearing aids collection at TunifyPro. Advanced hearing solutions with AI technology and superior sound quality.',
+    description: 'Explore Phonak\'s premium hearing aids collection at Tunifypro. Advanced hearing solutions with AI technology and superior sound quality.',
     url: 'https://tunifypro.com/products/phonak',
     mainEntity: {
       '@type': 'ItemList',
@@ -121,7 +121,7 @@ export function generateJsonLd() {
             priceCurrency: 'INR',
             seller: {
               '@type': 'Organization',
-              name: 'TunifyPro'
+              name: 'Tunifypro'
             }
           }
         },
@@ -164,7 +164,7 @@ export function generateJsonLd() {
     provider: {
       '@type': 'Organization',
       '@id': 'https://tunifypro.com/about',
-      name: 'TunifyPro',
+      name: 'Tunifypro',
       url: 'https://tunifypro.com',
       logo: 'https://tunifypro.com/logo.png',
       contactPoint: {
