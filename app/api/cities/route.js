@@ -6,30 +6,18 @@ export async function GET() {
     // Cities and areas in and around Dehradun
     const dehradunCities = [
       'Dehradun',
-      'Rishikesh',
       'Haridwar',
-      'Mussoorie',
-      'Roorkee',
-      'Saharanpur',
-      'Herbertpur',
-      'Vikasnagar',
-      'Chakrata',
-      'Rajpur',
-      'Clement Town',
-      'Patel Nagar',
-      'Hathibarkala',
-      'Selakui',
-      'Doiwala',
-      'ISBT Area',
-      'Gandhi Road',
-      'Paltan Bazaar',
-      'Race Course',
-      'Dalanwala',
-      'Karanpur',
-      'Jakhan',
-      'Mothrowala',
-      'Kaulagarh',
-      'Majra'
+      'Chamoli',
+      'Rudraprayag',
+      'Tehri Garhwal',
+      'Uttarkashi',
+      'Pauri Garhwal',
+      'Nainital',
+      'Almora',
+      'Udham Singh Nagar',
+      'Pithoragarh',
+      'Bageshwar',
+      'Champawat'
     ]
 
     // Sort cities alphabetically

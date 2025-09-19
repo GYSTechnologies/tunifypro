@@ -36,9 +36,7 @@ export default function BookingForm() {
       newErrors.name = 'Name is required'
     }
     
-    if (!formData.email.trim()) {
-      newErrors.email = 'Email is required'
-    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+    if (formData.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
       newErrors.email = 'Please enter a valid email'
     }
     
@@ -173,7 +171,7 @@ export default function BookingForm() {
         {/* Email Field */}
         <div>
           <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-2">
-            Email *
+            Email (Optional)
           </label>
           <input
             type="email"
@@ -217,7 +215,7 @@ export default function BookingForm() {
         {/* City Field */}
         <div>
           <label htmlFor="city" className="block text-sm font-semibold text-gray-700 mb-2">
-            Your City *
+            Your District in Uttarakhand*
           </label>
           <select
             id="city"
@@ -228,7 +226,7 @@ export default function BookingForm() {
               errors.city ? 'border-red-300 bg-red-50' : 'border-gray-300 hover:border-orange-300'
             }`}
           >
-            <option value="">Select your city</option>
+            <option value="">Select your District in Uttarakhand</option>
             {cities.map((city, index) => (
               <option key={index} value={city}>{city}</option>
             ))}

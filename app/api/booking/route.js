@@ -38,23 +38,11 @@ export async function POST(request) {
     const { name, email, phone, city, agreeToPrivacy } = body
 
     // Validate required fields
-    if (!name || !email || !phone || !city || !agreeToPrivacy) {
+    if (!name || !phone || !city || !agreeToPrivacy) {
       return NextResponse.json(
-        { 
-          success: false, 
-          message: 'All fields are required and privacy policy must be accepted' 
-        },
-        { status: 400 }
-      )
-    }
-
-    // Validate email format
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-    if (!emailRegex.test(email)) {
-      return NextResponse.json(
-        { 
-          success: false, 
-          message: 'Invalid email format' 
+        {
+          success: false,
+          message: 'All fields are required and privacy policy must be accepted'
         },
         { status: 400 }
       )
@@ -64,9 +52,9 @@ export async function POST(request) {
     const phoneRegex = /^[0-9]{10}$/
     if (!phoneRegex.test(phone)) {
       return NextResponse.json(
-        { 
-          success: false, 
-          message: 'Phone number must be 10 digits' 
+        {
+          success: false,
+          message: 'Phone number must be 10 digits'
         },
         { status: 400 }
       )
@@ -74,18 +62,26 @@ export async function POST(request) {
 
     // Validate city is from Dehradun area
     const allowedCities = [
-      'Dehradun', 'Rishikesh', 'Haridwar', 'Mussoorie', 'Roorkee', 
-      'Saharanpur', 'Herbertpur', 'Vikasnagar', 'Chakrata', 'Rajpur',
-      'Clement Town', 'Patel Nagar', 'Hathibarkala', 'Selakui', 'Doiwala',
-      'ISBT Area', 'Gandhi Road', 'Paltan Bazaar', 'Race Course', 'Dalanwala',
-      'Karanpur', 'Jakhan', 'Mothrowala', 'Kaulagarh', 'Majra'
+      'Dehradun',
+      'Haridwar',
+      'Chamoli',
+      'Rudraprayag',
+      'Tehri Garhwal',
+      'Uttarkashi',
+      'Pauri Garhwal',
+      'Nainital',
+      'Almora',
+      'Udham Singh Nagar',
+      'Pithoragarh',
+      'Bageshwar',
+      'Champawat'
     ]
 
     if (!allowedCities.includes(city)) {
       return NextResponse.json(
-        { 
-          success: false, 
-          message: 'Service is currently available only in Dehradun and nearby areas' 
+        {
+          success: false,
+          message: 'Service is currently available only in Dehradun and nearby areas'
         },
         { status: 400 }
       )
@@ -102,16 +98,6 @@ export async function POST(request) {
 
     await booking.save()
 
-    // Send confirmation email to user
-    const mailOptions = {
-      from: process.env.MAIL_USER,
-      to: email,
-      subject: 'Booking Confirmation - Audicorn',
-      text: `Dear ${name},\n\nThank you for your booking. We will connect with you within 24 hours.\n\nBest regards,\nAudicorn Team`,
-      html: `<p>Dear ${name},</p><p>Thank you for your booking. We will connect with you within 24 hours.</p><p>Best regards,<br>Audicorn Team</p>`
-    }
-
-    await transporter.sendMail(mailOptions)
 
     // Return success response
     return NextResponse.json({
@@ -129,9 +115,9 @@ export async function POST(request) {
   } catch (error) {
     console.error('Booking submission error:', error)
     return NextResponse.json(
-      { 
-        success: false, 
-        message: 'Something went wrong. Please try again later.' 
+      {
+        success: false,
+        message: 'Something went wrong. Please try again later.'
       },
       { status: 500 }
     )
