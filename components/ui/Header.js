@@ -45,7 +45,7 @@ export default function Header() {
         setIsMobileMenuOpen(false) // Close mobile menu
     }
 
-    // **NEW: Handle contact us click**
+    // **UPDATED: Handle contact us click for floating button**
     const handleContactUsClick = () => {
         window.open(`tel:${phoneNumber}`, '_self')
     }
@@ -71,36 +71,18 @@ export default function Header() {
                             </div>
                         </Link>
 
-                        {/* **UPDATED: Desktop Navigation with Contact Us button** */}
+                        {/* **UPDATED: Desktop Navigation - Removed Contact Us button** */}
                         <div className="hidden md:flex items-center space-x-4">
                             <button
-                                onClick={handleContactUsClick}
-                                className="bg-white  text-gray-700 hover:underline hover:underline-offset-4  px-4 py-2 rounded-full font-medium transition-all duration-300 transform hover:shadow-none flex items-center space-x-2"
-                            >
-                                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                                </svg>
-                                <span>Contact Us</span>
-                            </button>
-                            <button
                                 onClick={handleBookNowClick}
-                                className="bg-orange-500    hover:bg-orange-600 text-white px-6 py-2 rounded-full font-medium transition-all duration-300 transform hover:scale-105"
+                                className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full font-medium transition-all duration-300 transform hover:scale-105"
                             >
                                 Book Now
                             </button>
                         </div>
 
-                        {/* **UPDATED: Mobile Menu with Contact Us button** */}
+                        {/* **UPDATED: Mobile Menu - Removed Contact Us button** */}
                         <div className="md:hidden flex items-center space-x-2">
-                            <button
-                                onClick={handleContactUsClick}
-                                className="bg-white border border-gray-300 hover:bg-green-700 text-gray-700 px-3 py-2 rounded-full font-medium transition-colors text-sm flex items-center space-x-1"
-                            >
-                                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                                </svg>
-                                <span>Call</span>
-                            </button>
                             <button
                                 onClick={handleBookNowClick}
                                 className="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-full font-medium transition-colors text-sm"
@@ -111,6 +93,47 @@ export default function Header() {
                     </div>
                 </div>
             </header>
+
+            {/* **NEW: Floating Call Button - Bottom Right Corner** */}
+            <div className="fixed bottom-4 right-4 md:bottom-6 md:right-6 z-50">
+                <a
+                    href={`tel:${phoneNumber}`}
+                    className="group relative flex items-center justify-center w-14 h-14 md:w-16 md:h-16 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 active:scale-95"
+                    aria-label="Call us now"
+                >
+                    {/* **Call Icon** */}
+                    <svg 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        className="h-6 w-6 md:h-7 md:w-7 text-white z-10 relative" 
+                        fill="none" 
+                        viewBox="0 0 24 24" 
+                        stroke="currentColor"
+                    >
+                        <path 
+                            strokeLinecap="round" 
+                            strokeLinejoin="round" 
+                            strokeWidth={2} 
+                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" 
+                        />
+                    </svg>
+                    
+                    {/* **Pulse Animation Ring** */}
+                    <div className="absolute inset-0 bg-orange-500 rounded-full animate-ping opacity-25"></div>
+                    <div className="absolute inset-0 bg-orange-500 rounded-full animate-pulse opacity-20"></div>
+                    
+                    {/* **Tooltip (Desktop only)** */}
+                    <div className="absolute right-full top-1/2 transform -translate-y-1/2 mr-3 px-3 py-2 bg-gray-900 text-white text-sm rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-300 whitespace-nowrap pointer-events-none hidden md:block shadow-lg">
+                        Call us now!
+                        <div className="absolute left-full top-1/2 transform -translate-y-1/2 border-4 border-transparent border-l-gray-900"></div>
+                    </div>
+                    
+                    {/* **Mobile Tooltip (appears on tap)** */}
+                    <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-900 text-white text-xs rounded opacity-0 group-active:opacity-100 transition-opacity duration-200 md:hidden">
+                        Call
+                        <div className="absolute top-full left-1/2 transform -translate-x-1/2 border-2 border-transparent border-t-gray-900"></div>
+                    </div>
+                </a>
+            </div>
         </>
     )
 }
